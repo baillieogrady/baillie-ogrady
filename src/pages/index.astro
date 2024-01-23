@@ -1,0 +1,87 @@
+---
+import Index from '../layouts/Index.astro';
+import ListItem from '../components/ListItem.astro';
+
+import { Image } from 'astro:assets';
+import partyPopper from '../images/party-popper.png';
+---
+
+<Index>
+  <div class="container">
+    <section class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-[1.875rem] mb-32 lg:mb-52">
+      <div class="col-span-4 lg:col-span-7">
+          <h1 class="text-[1.6875rem] lg:text-[2.0625rem] leading-[1.4] font-normal">Freelance WordPress developer, building custom WordPress themes from Figma designs.</h1>
+      </div>
+    </section>
+    
+    <section class="mb-32 lg:mb-52">
+      <h2 class="text-[1.4375rem] leading-[1.4] font-normal pb-3 border-b border-black">Projects</h2>
+      <ul>
+        <ListItem name="Harlem capital" description="Classic theme" href="https://harlem.capital" linkText="Visit website" />
+        
+        <ListItem name="What a howler" description="Classic theme" href="https://whatahowler.com" linkText="Visit website" />
+            
+        <ListItem name="Future Visual" description="Classic theme" href="https://futurevisual.com" linkText="Visit website" />
+        
+        <ListItem name="Hotpmo" description="Classic theme" href="https://www.hotpmo.com/" linkText="Visit website" />
+            
+        <ListItem name="Congleton Decorators" description="Block theme" href="https://congletondecorators.com" linkText="Visit website" />
+            
+        <ListItem name="Captain" description="Starter block theme" href="https://github.com/baillieogrady/captain-block-theme" linkText="View on GitHub" hideOnMobile={true} />
+            
+        <ListItem name="Captain" description="Starter block plugin" href="https://github.com/baillieogrady/captain-blocks-plugin" linkText="View on GitHub" hideOnMobile={true} />
+            
+        <ListItem name="Nope" description="Chrome extension that blocks urls" href="https://github.com/baillieogrady/nope" linkText="View on GitHub" hideOnMobile={true} />
+      </ul>
+    </section>
+    
+    <section class="pb-16 border-b border-black mb-32 lg:mb-52">
+        <h2 class="pb-3 border-b border-black text-[1.4375rem] leading-[1.4] font-normal mb-12">Process</h2>
+        <ol class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem] gap-y-10 lg:gap-y-20">
+            <li class="col-span-4 lg:col-span-3 group">
+                <p class="flex flex-col">
+                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">1</span>
+                    <span><a href="mailto:hello@baillieogrady.com" class="underline hover:no-underline hover:text-blue inline-block">Email me</a> your Figma link and I'll scan through the designs. Also send any brief / comments so I can properly understand the project and what's required.</span>
+                </p>
+            </li>
+            <li class="col-span-4 lg:col-span-3 lg:col-start-5 group">
+                <p class="flex flex-col">
+                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">2</span><span>Once analysed, I'll email you back with any questions, a <strong>fixed</strong> price quote and completion deadline. I'll wrap everything into a proposal for clarity.</span>
+                </p>
+            </li>
+            <li class="col-span-4 lg:col-span-3 lg:col-start-9 group">
+                <p class="flex flex-col">
+                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">3</span><span>Next, I like to spend a day planning the entire theme on Trello, see template <a href="https://trello.com/invite/b/7i5M1ZMV/ATTI118b7813c28e2dfedcaa7caaaab596fd00C1A96A/example" class="underline hover:no-underline hover:text-blue">here</a>, and creating a dedicated Slack channel for the project. I'll invite you to both once ready.</span>
+                </p>
+            </li>
+            <li class="col-span-4 lg:col-span-3 group">
+                <p class="flex flex-col">
+                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">4</span><span>After planning, I'll start development, I use ACF Pro, TailwindCSS and plain JavaScript. I also update Trello as I go along, so you can see live progress of the build.</span>
+                </p>
+            </li>
+            <li class="col-span-4 lg:col-span-3 lg:col-start-5 group">
+                <p class="flex flex-col">
+                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">5</span><span>Completing development, I then test the theme on Chrome, Safari and Firefox. I'll also create a dev site that mirrors the designs and a list on Trello for you to log any amends you'd like to make for up to a week.</span>
+                </p>
+            </li>
+            <li class="col-span-4 lg:col-span-3 lg:col-start-9 group">
+                <p class="flex flex-col">
+                    <span class="inline-flex items-center mb-3"><span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mr-2">6</span><Image src={partyPopper} alt="Party popper" class="w-7 h-7" />
+                  </span>Once final amends are implemented we can sign off. I'll keep the dev site up, if you prefer. I'll provide repo access, exports and a handover covering how to use the theme.
+                </p>
+            </li>
+        </ol>
+    </section>  
+  </div>
+
+  <section class="mb-32 lg:mb-52">
+    <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
+        <div class="lg:col-start-5 col-span-4">
+            <h2 class="text-[1.4375rem] leading-[1.4] font-normal pb-3">Figma designs ready?</h2>
+            <p>
+              <a href="mailto:hello@baillieogrady.com?subject=Figma Link" class="group text-right"><span class="underline underline-offset-2 group-hover:no-underline group-hover:text-blue">Email</span> me your Figma link for a free quote </a>
+            </p>
+        </div>
+    </div>
+  </section>
+</Index>

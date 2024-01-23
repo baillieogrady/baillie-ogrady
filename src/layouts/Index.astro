@@ -1,0 +1,25 @@
+---
+// import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Freelance WordPress Developer based in Manchester">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="generator" content={Astro.generator} >
+    <title>Baillie O'Grady - Freelance WordPress Developer based in Manchester</title>
+  </head>
+  <body class="flex flex-col min-h-[100dvh] leading-[1.6]">
+    <a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
+    <Header />
+    <main class="flex-1 overflow-hidden" id="content">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

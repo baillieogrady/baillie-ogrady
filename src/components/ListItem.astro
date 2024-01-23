@@ -1,0 +1,18 @@
+---
+const { name, description, linkText, hideOnMobile, href } = Astro.props;
+---
+
+<li class=`block border-b border-black py-3 relative group hover:text-blue ${hideOnMobile ? 'hidden lg:block':''}`>
+    <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
+        <a href={href} class="absolute top-0 left-0 w-full h-full"></a>
+        <div class="col-span-2 lg:col-span-4">
+          {name}
+        </div>
+        <div class="hidden lg:block lg:col-span-6">
+          {description}
+        </div>
+        <p class="col-span-2 text-right underline underline-offset-2 group-hover:no-underline">
+          {linkText}
+        </p>
+    </div>
+</li>
