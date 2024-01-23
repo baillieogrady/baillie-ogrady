@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-[1.6875rem] lg:text-[2.0625rem] leading-[1.4] font-normal;
+    }
+
+    h2 {
+        @apply text-[1.4375rem] leading-[1.4] font-normal;
+    }
+
+    time,
+    img,
+    video {
+        @apply mb-[1.625rem];
+    }
+
+    time {
+        @apply block;
+    }
+}
+
+@layer components {
+    #blog {
+        p {
+            @apply mb-[1.625rem];
+        }
+
+        a {
+            @apply underline hover:no-underline hover:text-blue;
+        }
+
+        img {
+            @apply aspect-video;
+        }
+    }
+}
