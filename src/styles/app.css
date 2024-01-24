@@ -13,12 +13,16 @@
 
     time,
     img,
-    video {
+    iframe {
         @apply mb-[1.625rem];
     }
 
     time {
         @apply block;
+    }
+
+    iframe {
+        @apply w-full aspect-video;
     }
 }
 

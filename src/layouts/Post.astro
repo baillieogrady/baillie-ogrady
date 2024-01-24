@@ -3,7 +3,6 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/app.css';
 
-
 const { frontmatter } = Astro.props;
 ---
 
@@ -25,7 +24,7 @@ const { frontmatter } = Astro.props;
             <div class="pb-16 border-b border-black mb-32 lg:mb-52" id="blog">
                 <section class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
                     <div class="col-span-4 lg:col-span-5">
-                        <time datetime={frontmatter.pubDate}>{frontmatter.pubDate}</time>
+                        <time datetime={frontmatter.pubDate}>{frontmatter.pubDate.slice(0,10)}</time>
                         <h1 class="text-[1.6875rem] lg:text-[2.0625rem] leading-[1.4] font-normal mb-[1.625rem]">{frontmatter.title}</h1>
                         <slot />
                     </div>
@@ -44,5 +43,7 @@ const { frontmatter } = Astro.props;
         </div>
     </main>
     <Footer />
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
   </body>
 </html>

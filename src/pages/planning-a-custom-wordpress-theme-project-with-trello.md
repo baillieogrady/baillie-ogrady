@@ -21,7 +21,7 @@ Also, I normally break down the task further in each card with a checklist, espe
 
 Next I'll cover the most common cards I create when developing a theme. First up is Setup, here I create my local WordPress instance using Local by flywheel, GitHub repo to store the theme code and implement the style guide that's been provided on the designs.
 
-<!-- ![](../../public/videos/_creating-a-card-in-trello.mp4) -->
+<iframe src="https://player.vimeo.com/video/905799820?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&muted=1" title="Creating a card in trello" class="w-full aspect-video"></iframe>
 
 Following that, I scan through the designs for any 'Partials'. These are singular elements that are used often throughout the site, such as buttons. After this, I create cards for global content such as the header and footer.
 
@@ -31,6 +31,6 @@ Animation is next. I refer to the designs and list any that are mentioned. These
 
 Finally, optimization. Here I double-check that all images are being lazy loaded and all assets such as CSS and JS are fully minified, ready for production.
 
-<!-- The below screen recording illustrates what your Trello board should look like. -->
+The below screen recording illustrates what your Trello board should look like.
 
-<!-- ![](../../../public/videos/_populated-trello-board.mp4) -->
+<iframe src="https://player.vimeo.com/video/905799839?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&muted=1" title="Populated Trello board"></iframe>
