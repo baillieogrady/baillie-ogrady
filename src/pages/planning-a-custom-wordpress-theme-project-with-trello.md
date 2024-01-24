@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Post.astro
-title: 'Planning a custom WordPress theme project in trello'
+title: 'Planning a custom WordPress theme project with trello'
 pubDate: 2024-01-15
 description: 'Learn a simple way to plan a custom WordPress project with Trello.'
 ---
