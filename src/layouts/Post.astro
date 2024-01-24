@@ -1,49 +1,44 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Head from '../components/Footer.astro';
 import '../styles/app.css';
 
 const { frontmatter } = Astro.props;
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Freelance WordPress Developer based in Manchester">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <meta name="generator" content={Astro.generator} >
-    <title>Baillie O'Grady - Freelance WordPress Developer based in Manchester</title>
-  </head>
-  <body class="flex flex-col min-h-[100dvh] leading-[1.6]">
-    <a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
-    <Header />
+    <Head title={ frontmatter.title } description={ frontmatter.description } />
 
-    <main class="flex-1 overflow-hidden" id="content">
-        <div class="container">
-            <div class="pb-16 border-b border-black mb-32 lg:mb-52" id="blog">
-                <section class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
-                    <div class="col-span-4 lg:col-span-5">
-                        <time datetime={frontmatter.pubDate}>{frontmatter.pubDate.slice(0,10)}</time>
-                        <h1 class="text-[1.6875rem] lg:text-[2.0625rem] leading-[1.4] font-normal mb-[1.625rem]">{frontmatter.title}</h1>
-                        <slot />
+    <body class="flex flex-col min-h-[100dvh] leading-[1.6]">
+        <a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
+        <Header />
+
+        <main class="flex-1 overflow-hidden" id="content">
+            <div class="container">
+                <div class="pb-16 border-b border-black mb-32 lg:mb-52" id="blog">
+                    <section class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
+                        <div class="col-span-4 lg:col-span-5">
+                            <time datetime={frontmatter.pubDate}>{frontmatter.pubDate.slice(0,10)}</time>
+                            <h1 class="text-[1.6875rem] lg:text-[2.0625rem] leading-[1.4] font-normal mb-[1.625rem]">{frontmatter.title}</h1>
+                            <slot />
+                        </div>
+                    </section>
+                </div>
+                <section class="mb-32 lg:mb-52">
+                    <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
+                        <div class="lg:col-start-5 col-span-4">
+                            <h2 class="text-[1.4375rem] leading-[1.4] font-normal pb-3">Figma designs ready?</h2>
+                            <p>
+                                <a href="mailto:hello@baillieogrady.com?subject=Figma Link" class="group text-right"><span class="underline underline-offset-2 group-hover:no-underline group-hover:text-blue">Email</span> me your Figma link for a free quote </a>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
-            <section class="mb-32 lg:mb-52">
-                <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
-                    <div class="lg:col-start-5 col-span-4">
-                        <h2 class="text-[1.4375rem] leading-[1.4] font-normal pb-3">Figma designs ready?</h2>
-                        <p>
-                            <a href="mailto:hello@baillieogrady.com?subject=Figma Link" class="group text-right"><span class="underline underline-offset-2 group-hover:no-underline group-hover:text-blue">Email</span> me your Figma link for a free quote </a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <Footer />
+        </main>
+        <Footer />
 
-    <script src="https://player.vimeo.com/api/player.js"></script>
-  </body>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </body>
 </html>
