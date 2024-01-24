@@ -7,9 +7,10 @@ import '../styles/app.css';
 
 <html lang="en">
   <Head title="Baillie O'Grady - Freelance WordPress Developer based in Manchester" description="Freelance WordPress Developer based in Manchester"/>
+  
   <body class="flex flex-col min-h-[100dvh] leading-[1.6]">
-    <a href="#content" class="sr-only focus:not-sr-only">Skip to content</a>
     <Header />
+
     <main class="flex-1 overflow-hidden" id="content">
       <slot />
       <section class="mb-32 lg:mb-52">
@@ -21,8 +22,9 @@ import '../styles/app.css';
                 </p>
             </div>
         </div>
-    </section>
+      </section>
     </main>
+    
     <Footer />
   </body>
 </html>
