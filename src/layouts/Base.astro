@@ -13,16 +13,18 @@ import '../styles/app.css';
 
     <main class="flex-1 overflow-hidden" id="content">
       <slot />
-      <section class="mb-32 lg:mb-52">
-        <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
-            <div class="lg:col-start-5 col-span-4">
-                <h2 class="text-[1.4375rem] leading-[1.4] font-normal pb-3">Figma designs ready?</h2>
-                <p>
-                    <a href="mailto:hello@baillieogrady.com?subject=Figma Link" class="group text-right"><span class="underline underline-offset-2 group-hover:no-underline group-hover:text-blue">Email</span> me your Figma link for a free quote </a>
-                </p>
-            </div>
-        </div>
-      </section>
+      <div class="container">
+        <section class="mb-32 lg:mb-52">
+          <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
+              <div class="lg:col-start-5 col-span-4">
+                  <h2 class="text-[1.4375rem] leading-[1.4] font-normal pb-3">Figma designs ready?</h2>
+                  <p>
+                      <a href="mailto:hello@baillieogrady.com?subject=Figma Link" class="group text-right"><span class="underline underline-offset-2 group-hover:no-underline group-hover:text-blue">Email</span> me your Figma link for a free quote </a>
+                  </p>
+              </div>
+          </div>
+        </section>
+      </div>
     </main>
     
     <Footer />
