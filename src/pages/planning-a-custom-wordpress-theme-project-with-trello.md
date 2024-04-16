@@ -11,7 +11,11 @@ Firstly, after creating a board, we'll make four lists: **Backlog**, **Responsiv
 
 Note, I only ever work on one task at a time, which is always the card on top of either the backlog, responsive or QA list. This allows me to stay focused and keeps your Git commits logical.
 
+<figure>
+
 ![Trello board with four lists](../images/four-lists-in-trello.jpg)
+
+</figure>
 
 Moreover, the Responsive and QA lists are reserved for any development related tasks such as coding ACF blocks. For instance, since I code Desktop first, after finishing desktop styling on an ACF block, I place it in the responsive column. Then, once I've made it responsive, I place it in the QA column, where I test it on all modern browsers. 
 

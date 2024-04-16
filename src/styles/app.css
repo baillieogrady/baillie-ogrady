@@ -40,4 +40,13 @@
             @apply aspect-video;
         }
     }
+
+    #content {
+        figure p {
+            @apply w-full;
+        }
+        p {
+            @apply lg:w-2/3;
+        }
+    }
 }
