@@ -17,7 +17,7 @@ const { frontmatter } = Astro.props;
             <div class="container">
                 <div class="pb-16 border-b border-black mb-32 lg:mb-52" id="blog">
                     <section class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
-                        <div class="col-span-4 lg:col-span-7" id="content">
+                        <div class="col-span-4 lg:col-span-7" id="post-content">
                             <time datetime={frontmatter.pubDate.slice(0,10)}>{frontmatter.pubDate.slice(0,10)}</time>
                             <h1 class="text-[1.6875rem] lg:text-[2.0625rem] leading-[1.4] font-normal mb-[1.625rem] lg:w-2/3">{frontmatter.title}</h1>
                             <slot />

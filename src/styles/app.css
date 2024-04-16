@@ -41,7 +41,7 @@
         }
     }
 
-    #content {
+    #post-content {
         figure p {
             @apply w-full;
         }
