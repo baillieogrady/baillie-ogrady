@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Post.astro
-title: 'WordPress Classic Theme setup using Parcel, TailwindCSS and Local by Flywheel.'
+title: 'Starter WordPress Classic Theme using Parcel, TailwindCSS and Local by Flywheel.'
 pubDate: 2024-04-30
 description: ''
 ---
