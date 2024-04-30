@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Post.astro
 title: 'Planning a custom WordPress theme project with trello'
-pubDate: 2024-01-15
+pubDate: 15-01-2024
 description: ''
 ---
 

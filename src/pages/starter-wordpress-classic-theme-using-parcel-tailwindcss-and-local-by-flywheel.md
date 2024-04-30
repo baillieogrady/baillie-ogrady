@@ -1,21 +1,21 @@
 ---
 layout: ../layouts/Post.astro
 title: 'Starter WordPress Classic Theme using Parcel, TailwindCSS and Local by Flywheel.'
-pubDate: 2024-04-30
+pubDate: 30-04-2024
 description: ''
 ---
 
-See repo here: [link](https://github.com/baillieogrady/parcel-tailwind-classic-wordpress-theme)
+See repo [here](https://github.com/baillieogrady/parcel-tailwind-classic-wordpress-theme).
 
 **Disclaimer: hot reloading does not work when saving PHP files and this setup has only been tested using Local by Flywheel to create the WordPress instance.**
 
-First, create a folder for your theme and open it in your text editor, in this instance I’ll be using VSCode and for the WordPress instance I’ll be using Local by flywheel.
+First, create a folder for your theme and open it in your text editor, in this instance I’ll be using VSCode and Local by flywheel to create a WordPress instance.
 
 Create the two mandatory WordPress files inside this folder: **style.css** and **index.php**, populating the style.css with the following so it can be activated in the CMS:
 
 <!-- screenshot / screen recording -->
 
-After this, we’ll create two template files **header.php** and **footer.php**, since you’ll most likely need these in every project. Once created, include the necessary mark up such as the **wp_head()** function in the header and **wp_footer()** function in the footer. Following this, output them in the index.php file using the **get_header()** and **get_footer()**:
+After this, we’ll create two template files **header.php** and **footer.php**. Once created, include the necessary mark up such as the **wp_head()** function in the header and **wp_footer()** function in the footer. Following this, output them in the index.php file using the **get_header()** and **get_footer()**:
 
 <!-- screenshot / screen recording -->
 
