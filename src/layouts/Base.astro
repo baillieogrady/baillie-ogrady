@@ -1,19 +1,19 @@
 ---
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro'; 
+// import Footer from '../components/Footer.astro'; 
 import Head from '../components/Head.astro'; 
 import '../styles/app.css';
 ---
 
 <html lang="en">
-  <Head title="Baillie O'Grady - Freelance WordPress Developer based in Manchester" description="Freelance WordPress Developer based in Manchester"/>
+  <Head title="Baillie O'Grady - Freelance WordPress Developer based in Manchester, England" description="Freelance WordPress Developer based in Manchester, England"/>
   
-  <body class="flex flex-col min-h-[100dvh] leading-[1.6]">
+  <body class="flex flex-col leading-[1.6]">
     <Header />
 
     <main class="flex-1 overflow-hidden" id="content">
       <slot />
-      <div class="container">
+      <!-- <div class="container">
         <section class="mb-32 lg:mb-52">
           <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem]">
               <div class="lg:col-start-5 col-span-4">
@@ -24,9 +24,9 @@ import '../styles/app.css';
               </div>
           </div>
         </section>
-      </div>
+      </div> -->
     </main>
     
-    <Footer />
+    <!-- <Footer /> -->
   </body>
 </html>

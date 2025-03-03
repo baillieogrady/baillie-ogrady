@@ -2,70 +2,34 @@
 import Base from '../layouts/Base.astro';
 import ListItem from '../components/ListItem.astro';
 
-import { Image } from 'astro:assets';
-import partyPopper from '../images/party-popper.png';
+// import { Image } from 'astro:assets';
+// import partyPopper from '../images/party-popper.png';
 ---
 
 <Base>
   <div class="container">
-    <section class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-[1.875rem] mb-32 lg:mb-52">
-      <div class="col-span-4 lg:col-span-7">
-          <h1>Freelance WordPress developer, building custom WordPress themes from Figma designs.</h1>
-      </div>
+    <section class="mb-32 lg:mb-52">
+        <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-[1.875rem]">
+            <div class="col-span-4 lg:col-span-7">
+                <h1 class="mb-6">Freelance WordPress developer, building custom WordPress themes from Figma designs.</h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-[1.875rem]">
+            <div class="col-span-4 lg:col-span-5">
+                <p>Exclusively working with web agencies worldwide, I am heavily focused on front-end development, frequently using ACF Pro, Local by Flywheel, TailwindCSS, Vite.js, Web Components, and Storybook.</p>
+            </div>
+        </div>
     </section>
     
-    <section class="mb-32 lg:mb-52">
-      <h2 class="pb-3 border-b border-black block">Projects</h2>
+    <section class="mb-5 lg:mb-[1.875rem]">
+      <h2 class="pb-3 border-b border-black block">Work</h2>
       <ul>
         <ListItem name="Harlem capital" description="" href="https://harlem.capital" linkText="Visit website" />
         <ListItem name="What a howler" description="" href="https://whatahowler.com" linkText="Visit website" />
         <ListItem name="Future Visual" description="" href="https://futurevisual.com" linkText="Visit website" />
         <ListItem name="Hotpmo" description="" href="https://hotpmo.com/" linkText="Visit website" />
-        <ListItem name="Hodern" description="" href="https://thehordern.com.au/" linkText="Visit website" />
+        <ListItem name="Hodern" description="" href="https://thehordern.com.au/" linkText="Visit website" noBorder />
       </ul>
     </section>
-    
-    <section class="pb-16 border-b border-black mb-32 lg:mb-52">
-        <h2 class="pb-3 border-b border-black mb-12">Process</h2>
-        <ol class="grid grid-cols-4 lg:grid-cols-12 gap-x-5 lg:gap-x-[1.875rem] gap-y-10 lg:gap-y-20">
-            <li class="col-span-4 lg:col-span-3 group">
-                <p class="flex flex-col">
-                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">1</span>
-                    <span><a href="mailto:hello@baillieogrady.com" class="underline hover:no-underline hover:text-blue inline-block">Email me</a> your Figma link with any notes.</span>
-                </p>
-            </li>
-            <li class="col-span-4 lg:col-span-3 lg:col-start-5 group">
-                <p class="flex flex-col">
-                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">2</span><span>Once analysed, I'll email you back with any questions. My day rate is £325, with the average small to medium sized website taking me 10 to 15 working days.</span>
-                </p>
-            </li>
-            <li class="col-span-4 lg:col-span-3 lg:col-start-9 group">
-                <p class="flex flex-col">
-                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">3</span><span>If you're happy to proceed, I like to spend a day planning with a Github project board and a dedicated Slack channel. I'll invite you to both once created.</span>
-                </p>
-            </li>
-            <li class="col-span-4 lg:col-span-3 group">
-                <p class="flex flex-col">
-                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">4</span><span>Next is development, I use ACF Pro, TailwindCSS and Vanilla JavaScript. I also update the Github project board in tandem, so you can see live progress of the build.</span>
-                </p>
-            </li>
-            <li class="col-span-4 lg:col-span-3 lg:col-start-5 group">
-                <p class="flex flex-col">
-                    <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mb-3">5</span><span>Completing development, I then test the theme on Chrome, Safari and Firefox. I'll also create a dev site that mirrors the designs for you to review and experiment with.</span>
-                </p>
-            </li>
-            <li class="col-span-4 lg:col-span-3 lg:col-start-9 group">
-                <p class="flex flex-col">
-                    <span class="inline-flex items-center mb-3">
-                        <span class="group-hover:text-blue group-hover:border-blue inline-flex items-center justify-center bg-white border border-black rounded-full w-8 h-8 mr-2">6</span>
-                        <Image src={partyPopper} alt="Party popper" class="w-7 h-7 mb-0" />
-                    </span>
-                    <span>
-                        Once reviewed and all bugs are resolved, we can sign off. I'll keep the dev site up if you prefer, provide Github repo access and a brief handover covering how to use the theme.
-                    </span>
-                </p>
-            </li>
-        </ol>
-    </section>  
   </div>
 </Base>
